@@ -1,0 +1,4 @@
+-  use cache to store data and  light/dark mode
+-  limit initial fetch to x number
+-  separate css into different modules
+-  simplify css focused etc..
