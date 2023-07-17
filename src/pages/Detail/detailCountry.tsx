@@ -11,7 +11,7 @@ export default function DetailCountry() {
 	const navigate = useNavigate();
 
 	const handleClick = () => {
-		navigate("/");
+		navigate("/Rest-Country-Api-React-Ts/");
 	};
 
 	// for (let bo in data?.borders) {
@@ -41,56 +41,62 @@ export default function DetailCountry() {
 			</Button>
 			<div className={style.content_w}>
 				<img src={data?.flags.svg} alt="" className={style.img} />
-				<div className={style.info}>
-					<div className={style.title}>{data?.name.common}</div>
-					<div className={style.detailList}>
+				<div>
+					{" "}
+					<div className={style.info}>
+						<div className={style.title}>{data?.name.common}</div>
+						<div className={style.detailList}>
+							<ul>
+								<li>
+									<h3>Native Name:</h3> {data?.name.official}
+								</li>
+								<li>
+									<h3>Population:</h3> {data?.population}
+								</li>
+								<li>
+									<h3>Region:</h3> {data?.region}
+								</li>
+								<li>
+									<h3>Sub Region:</h3> {data?.subregion}
+								</li>
+								<li>
+									<h3>Capital:</h3> {data?.capital}
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<h3>Top Level Domain:</h3> {data?.tld}
+								</li>
+								<li>
+									<h3>Currencies:</h3>
+								</li>
+								<li>
+									<h3>Languages:</h3>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div className={style.borders}>
+						<h3>Border Countries:</h3>
 						<ul>
-							<li>
-								<h3>Native Name:</h3> {data?.name.official}
-							</li>
-							<li>
-								<h3>Population:</h3> {data?.population}
-							</li>
-							<li>
-								<h3>Region:</h3> {data?.region}
-							</li>
-							<li>
-								<h3>Sub Region:</h3> {data?.subregion}
-							</li>
-							<li>
-								<h3>Capital:</h3> {data?.capital}
-							</li>
-						</ul>
-						<ul>
-							<li>
-								<h3>Top Level Domain:</h3> {data?.tld}
-							</li>
-							<li>
-								<h3>Currencies:</h3>
-							</li>
-							<li>
-								<h3>Languages:</h3>
-							</li>
+							{data?.borders?.map((el) => {
+								return (
+									<ListItem
+										sx={{
+											backgroundColor:
+												"background.paper",
+										}}
+									>
+										<Link
+											to={`/Rest-Country-Api-React-Ts/detail/${el}`}
+										>
+											{el}
+										</Link>
+									</ListItem>
+								);
+							})}
 						</ul>
 					</div>
-				</div>
-				<div className={style.borders}>
-					<h3>Border Countries:</h3>
-					<ul>
-						{data?.borders?.map((el) => {
-							return (
-								<ListItem
-									sx={{backgroundColor: "background.paper"}}
-								>
-									<Link
-										to={`/Rest-Country-Api-React-Ts/detail/${el}`}
-									>
-										{el}
-									</Link>
-								</ListItem>
-							);
-						})}
-					</ul>
 				</div>
 			</div>
 		</div>

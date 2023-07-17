@@ -12,7 +12,7 @@ export default function Search({handleKeyDown}: any) {
 		>
 			<SearchIcon />
 			<TextField
-				sx={{width: "100%"}}
+				sx={{width: "100%", color:"text.primary"}}
 				variant="standard"
 				size="small"
 				label="Search for a country..."

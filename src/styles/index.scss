@@ -86,21 +86,17 @@ picture {
 
 // LIGHT MODE
 // search label
-.css-16cq9s8-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+label.Mui-focused {
 	color: hsl(0, 0%, 52%) !important;
 }
-
 // search input border
-.css-an3h28-MuiInputBase-root-MuiInput-root:after {
+.MuiInputBase-input.MuiInput-input:after {
 	border-bottom-color: hsl(0, 0%, 52%) !important;
 }
-
-
 // select label
 .css-ekbdqv-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
 	color: #9e9e9e !important;
 }
-
 // select fieldset border
 .css-wbwzx-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline {
 	border-color: hsl(0, 0%, 52%) !important;
@@ -110,19 +106,16 @@ picture {
 // DARK MODE
 // search label
 .css-sedhr7-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
-	color: #9e9e9e !important;
+	color: hsl(0, 0%, 62%) !important;
 }
-
 // search input border
 .css-rbrwnw-MuiInputBase-root-MuiInput-root:after {
-	border-bottom-color: #9e9e9e !important;
+	border-bottom-color: hsl(0, 0%, 62%) !important;
 }
-
 // select label
 .css-jsignb-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
 	color: #9e9e9e !important;
 }
-
 // select fieldset border
 .css-1jg7lml-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline {
 	border-color: #9e9e9e !important;
