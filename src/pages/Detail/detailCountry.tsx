@@ -82,7 +82,11 @@ export default function DetailCountry() {
 								<ListItem
 									sx={{backgroundColor: "background.paper"}}
 								>
-									<Link to={`/detail/${el}`}>{el}</Link>
+									<Link
+										to={`/Rest-Country-Api-React-Ts/detail/${el}`}
+									>
+										{el}
+									</Link>
 								</ListItem>
 							);
 						})}

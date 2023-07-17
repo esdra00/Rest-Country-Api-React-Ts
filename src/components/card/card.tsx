@@ -33,7 +33,9 @@ export default function Card({countries, region}: {countries: any; region: strin
 									{/* <Link to={`/detail/${el.name.common}`}>
 										 {el.name.common}
 									</Link>  */}
-									<Link to={`/detail/${el.cca3}`}>
+									<Link
+										to={`/Rest-Country-Api-React-Ts/detail/${el.cca3}`}
+									>
 										{el.name.common}
 									</Link>
 								</div>

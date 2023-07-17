@@ -5,11 +5,14 @@ import MainPage from "./pages/mainPage";
 
 const router = createBrowserRouter([
 	{
-		path: "/",
+		path: "/Rest-Country-Api-React-Ts/",
 		element: <Layout />,
 		children: [
-			{path: "/", element: <MainPage />},
-			{path: "detail/:code", element: <DetailCountry />},
+			{path: "/Rest-Country-Api-React-Ts/", element: <MainPage />},
+			{
+				path: "/Rest-Country-Api-React-Ts/detail/:code",
+				element: <DetailCountry />,
+			},
 		],
 	},
 ]);
